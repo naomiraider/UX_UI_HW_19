@@ -243,7 +243,7 @@ nav ul li a:before {
 }
 nav ul li a:hover {
   color: #555;
-  text-decoration: underline;
+  text-size-adjust: larger;
 } 
 
  h2 {
