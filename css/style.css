@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.inline-block {
+  vertical-align: top;
+  display: inline-block;
+}
+.logo {
+  padding: 1%;
+  width: 20%;
+  display: inline-flex;
+  align-items: center;
+}
+nav {
+  /* width: 99%; */
+  /* margin-left: auto; */
+  padding: 1%;
+  font-size: 24px;
+  flex-grow: 1;
+}
+.image-fluid {
+  width: 100%;
+}
+ul {
+  /* width: 90%; */
+  margin-left: auto;
+  display: flex;
+  column-gap: 5rem;
+  justify-content: space-between;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  /* width: fit-content; */
+  font-size: 20px;
+  margin-bottom: 150px;
+}
+.heroImg {
+  padding: 15px;
+  /* background-color:rgba(218, 165, 32, 0.688); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  /* width: 40%; */
+  /* align-items: center; */
+  /* margin: 0 auto; */
+  padding: 30px;
+  font-size: 24px;
+  display: flex;
+  column-gap: 36px;
+  /* text-align: center; */
+  justify-content: center;
+  
+}
+footer {
+  background-color: #373738;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 100%; */
+  padding: 1%;
+  margin-top: 20px;
+}
+footer li {
+  color: white;
+}
+header {
+  display: flex;
+  padding-right: 2rem;
+}
+li {
+  font-size: 24px;
+  color: #808080;
+  list-style-type: none;
+}
+button {
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #373738;
+  font-family: "Montserrat", sans-serif;
+  width: fit-content;
+  /* margin-top: 1rem; */
+  margin-bottom: .25rem;
+  /* justify-self: end; */
+  /* align-content: right; */
+  /* align-self: center; */
+  
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  /* row-gap:1.25rem; */
+  justify-content: space-between;
+}
+.flexContainer {
+  display: flex;
+  column-gap: 2rem;
+  margin: 0 auto;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.workGrid {
+  display: grid;
+  /* width: 50%; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  grid-template-columns: 1fr 1fr;
+  /* margin-left: 25%; */
+  /* margin: 0 auto; */
+  /* margin-right: 20%; */
+  /* column-gap: 5rem; */
+  /* row-gap: 2rem; */
+  align-content: center;
+  grid-template-areas:
+    "proto1-img proto1"
+    "proto2 proto2-img"
+    "proto3-img proto3";
+}
+.square {
+  aspect-ratio: 1/1;
+}
+.workGrid img {
+  height: 100%;
+}
+.workGrid > div {
+  border-bottom: #808080 1px solid;
+  padding: 20px;
+}
+.width-33 {
+  width: calc(33% - 2rem);
+  align-items: center;
+  text-align: center;
+  /* margin-left: 10%;
+  margin-right: 10%; */
+  margin-bottom: 5%;
+}
+.width-33 img {
+  max-width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+h1 {
+  font-size: 60px;
+  font-family: "Abril Fatface", cursive;
+  text-align: center;
+  /* border: #808080 1px solid; */
+  padding: 1rem;
+}
+h3 {
+  font-size: 36px;
+  text-align: center;
+}
+h4 {
+  font-size: 36px;
+}
+#proto1 {
+  grid-area: proto1;
+}
+#proto2 {
+  grid-area: proto2;
+  text-align: right;
+  align-items: end;
+  /* padding-right: 400px; */
+}
+#proto3 {
+  grid-area: proto3;
+}
+#proto1-img {
+  grid-area: proto1-img;
+}
+#proto2-img {
+  grid-area: proto2-img;
+  /* align-items: center; */
+}
+
+#proto3-img {
+  grid-area: proto3-img;
+  /* align-self: center; */
+}
+.philosophy {
+  /* background-color: goldenrod; */
+  padding: 1rem;
+  width: 100%;
+}
+/* nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+nav {
+  width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 50px 0;
+  box-shadow: 0px 5px 0px #dedede;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: underline;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+} */
+
+/* h2 {
+  font-family: "Parisienne", cursive;
+  font-size: 50px;
+  display: flex;
+  text-align: center;
+  color: white;
+} */
+@media only screen and (max-width: 1000px) {
+  .workGrid {
+    grid-template-areas:
+      "proto1-img"
+      "proto1"
+      "proto2-img"
+      "proto2"
+      "proto3-img"
+      "proto3";
+  }
+}
