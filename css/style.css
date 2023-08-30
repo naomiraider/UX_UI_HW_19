@@ -53,7 +53,6 @@ body {
   column-gap: 36px;
   /* text-align: center; */
   justify-content: center;
-  
 }
 footer {
   background-color: #373738;
@@ -88,11 +87,10 @@ button {
   font-family: "Montserrat", sans-serif;
   width: fit-content;
   /* margin-top: 1rem; */
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
   /* justify-self: end; */
   /* align-content: right; */
   /* align-self: center; */
-  
 }
 .column {
   display: flex;
@@ -198,7 +196,7 @@ h4 {
 
 nav a:after {
   text-align: left;
-  content: '.';
+  content: ".";
   margin: 0;
   opacity: 0;
 }
@@ -239,14 +237,15 @@ nav a {
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
-  transition: all .5s;
+  transition: all 0.5s;
 }
 nav ul li a:hover {
-  color: #555;
-  text-size-adjust: larger;
-} 
+  color: rgb(51, 50, 50);
+  font-weight: bolder;
+  text-shadow: #aaa;
+}
 
- h2 {
+h2 {
   font-family: "Parisienne", cursive;
   font-size: 50px;
   display: flex;
