@@ -37,10 +37,12 @@ body {
   margin-bottom: 150px;
 }
 .heroImg {
-  padding: 15px;
-  /* background-color:rgba(218, 165, 32, 0.688); */
+  padding: 25px;
+  /* background-color:rgba(218, 165, 32, 0.688);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .content {
@@ -48,7 +50,7 @@ body {
   /* align-items: center; */
   /* margin: 0 auto; */
   padding: 30px;
-  font-size: 24px;
+  font-size: 15px;
   display: flex;
   column-gap: 36px;
   /* text-align: center; */
@@ -243,6 +245,7 @@ nav ul li a:hover {
   color: rgb(51, 50, 50);
   font-weight: bolder;
   text-shadow: #aaa;
+  text-decoration-line: underline;
 }
 
 h2 {
@@ -262,4 +265,7 @@ h2 {
       "proto3-img"
       "proto3";
   }
+}
+p {
+  margin-bottom: 1rem;
 }
