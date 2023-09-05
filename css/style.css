@@ -161,7 +161,6 @@ h1 {
   padding: 1rem;
 }
 h3 {
- 
   font-size: 32px;
   text-align: center;
   font-weight: 300;
@@ -169,7 +168,6 @@ h3 {
 h4 {
   font-size: 36px;
   font-weight: 400;
-
 }
 #proto1 {
   grid-area: proto1;
@@ -321,7 +319,7 @@ form {
   justify-content: baseline;
   height: 700px;
 }
-  
+
 .form-control {
   width: 100%;
 }
@@ -376,5 +374,5 @@ polygon {
   }
 }
 .form-control {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
