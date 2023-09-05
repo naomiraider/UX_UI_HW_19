@@ -43,8 +43,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat; */
   width: 100%;
-  /* aspect-ratio: 77/117; */
-  scale:calc(77/117)
+  /* aspect-ratio: calc(77/117) */
+  /* scale:calc(77/117) */
 }
 
 .content {
@@ -131,6 +131,7 @@ button {
 }
 .square {
   aspect-ratio: 1/1;
+  border: lightgray 1px solid;
 }
 .workGrid img {
   height: 100%;
@@ -168,6 +169,7 @@ h3 {
 h4 {
   font-size: 36px;
   font-weight: 400;
+
 }
 #proto1 {
   grid-area: proto1;
