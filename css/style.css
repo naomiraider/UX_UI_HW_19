@@ -35,6 +35,7 @@ body {
   /* width: fit-content; */
   font-size: 20px;
   margin-bottom: 150px;
+  font-weight: 100;
 }
 .heroImg {
   padding: 25px;
@@ -71,6 +72,7 @@ footer {
 }
 footer li {
   color: white;
+  font-size: 1rem;
 }
 header {
   display: flex;
@@ -83,8 +85,8 @@ li {
 }
 button {
   padding: 10px;
-  font-size: 30px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 300;
   color: #373738;
   font-family: "Montserrat", sans-serif;
   width: fit-content;
@@ -157,12 +159,14 @@ h1 {
   padding: 1rem;
 }
 h3 {
-  font-size: 36px;
+ 
+  font-size: 32px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 300;
 }
 h4 {
   font-size: 36px;
+  font-weight: 400;
 }
 #proto1 {
   grid-area: proto1;
@@ -193,13 +197,13 @@ h4 {
   padding: 1rem;
   width: 100%;
 }
-/* nav a {
+nav a {
   transition: all 1s;
-} */
+}
 
 nav a:after {
   text-align: left;
-  content: ".";
+  /* content: "."; */
   margin: 0;
   opacity: 0;
 }
@@ -233,7 +237,7 @@ nav a {
   padding: 15px;
   text-decoration: none;
   color: #aaa;
-  font-weight: 800;
+  font-weight: 100;
   text-transform: underline;
   margin: 0 10px;
 }
@@ -244,9 +248,30 @@ nav ul li a:before {
 }
 nav ul li a:hover {
   color: rgb(51, 50, 50);
-  font-weight: bolder;
+  font-weight: 300;
   text-shadow: #aaa;
   text-decoration-line: underline;
+}
+footer a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 100;
+  text-transform: underline;
+  margin: 0 10px;
+}
+footer ul li a,
+footer ul li a:after,
+footer ul li a:before {
+  transition: all 0.5s;
+}
+footer ul li a:hover {
+  color: goldenrod;
+  font-weight: 300;
+  text-shadow: goldenrod;
+  text-decoration-line: underline;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -283,16 +308,17 @@ form {
   background-color: rgba(255, 255, 255, 0.696);
   line-height: 2rem;
 }
-Contact {
-  background-color: rgba(255, 255, 255, 0.696);
+.Contact {
+  background: url(../images/contactbackground.png);
   background-size: cover;
   display: flex;
   align-items: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 500px;
+  justify-content: baseline;
+  height: 700px;
 }
+  
 .form-control {
   width: 100%;
 }
@@ -345,4 +371,7 @@ polygon {
   &.arrow-top {
     opacity: 0.5;
   }
+}
+.form-control {
+  font-family: 'Montserrat', sans-serif;
 }
