@@ -159,6 +159,7 @@ h1 {
 h3 {
   font-size: 36px;
   text-align: center;
+  font-weight: 500;
 }
 h4 {
   font-size: 36px;
@@ -300,7 +301,7 @@ button small {
 }
 .arrowcontainer {
   /* background: PaleGoldenRod  ; */
-  height: 100vh;
+  height: 5rem;
   padding: 20px;
   text-align: center;
 }
@@ -309,24 +310,18 @@ button small {
   position: relative;
   left: 50%;
   top: 50%;
-	transform: translate(-50%, -50%);
-  
-  /* p {
-    margin: 0 0 20px;
-  } */
-  
+  transform: translate(-50%, -50%);
 }
 
 /* Arrow & Hover Animation */
 #more-arrows {
-	width: 75px;
+  width: 75px;
   height: 65px;
-  
+
   &:hover {
-    
     polygon {
       fill: rgba(0, 0, 0, 0.631);
-      transition: all .2s ease-out;
+      transition: all 0.2s ease-out;
 
       &.arrow-bottom {
         transform: translateY(-18px);
@@ -335,23 +330,19 @@ button small {
       &.arrow-top {
         transform: translateY(18px);
       }
-      
     }
-  
   }
-  
 }
 
 polygon {
   fill: rgba(0, 0, 0, 0.152);
-  transition: all .2s ease-out;
-    
-  &.arrow-middle {
-	  opacity: 0.75;
-	}
+  transition: all 0.2s ease-out;
 
-	&.arrow-top {
-	  opacity: 0.5
-	}
+  &.arrow-middle {
+    opacity: 0.75;
+  }
+
+  &.arrow-top {
+    opacity: 0.5;
+  }
 }
-	 
