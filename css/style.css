@@ -380,3 +380,6 @@ polygon {
   font-size: 15px;
   text-justify: auto;
 }
+.card-header {
+  text-align: right;
+}
