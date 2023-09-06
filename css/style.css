@@ -103,6 +103,7 @@ button:hover {
   /* font-size: 1.25rem;
   padding: .375rem; */
   transform: scale(1.25);
+  border: goldenrod 1px solid;
 }
 .column {
   display: flex;
@@ -351,7 +352,7 @@ button small {
   height: 65px;
 }
 #more-arrows:hover polygon {
-  fill: rgba(0, 0, 0, 0.631);
+  fill: rgba(218, 165, 32, 0.678);
   transition: all 0.2s ease-out;
 }
 #more-arrows:hover polygon.arrow-bottom {
