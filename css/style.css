@@ -315,7 +315,6 @@ form {
   display: flex;
   align-items: center;
   flex-direction: column;
-  align-items: center;
   justify-content: baseline;
   height: 700px;
 }
@@ -339,7 +338,6 @@ button small {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
 /* Arrow & Hover Animation */
 #more-arrows {
   width: 75px;
@@ -379,7 +377,22 @@ polygon {
 .mb-0 {
   font-size: 15px;
   text-justify: auto;
+  opacity: 1;
+}
+.blockquote p {
+  opacity: 1;
 }
 .card-header {
   text-align: right;
+}
+.card-body {
+  background: url(../images/PNG/quotes@4x.png);
+  background-size: cover;
+  background-position: 0, 5%;
+  background-repeat: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /* opacity: .25; */
 }
