@@ -376,3 +376,7 @@ polygon {
 .form-control {
   font-family: "Montserrat", sans-serif;
 }
+.mb-0 {
+  font-size: 15px;
+  text-justify: auto;
+}
