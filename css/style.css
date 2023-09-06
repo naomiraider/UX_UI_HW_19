@@ -49,7 +49,7 @@ body {
 
 .content {
   /* width: 40%; */
-  /* align-items: center; */
+  align-items: center;
   /* margin: 0 auto; */
   padding: 30px;
   font-size: 15px;
@@ -85,8 +85,8 @@ li {
   list-style-type: none;
 }
 button {
-  padding: 10px;
-  font-size: 20px;
+  padding: .5rem;
+  font-size: 1rem;
   font-weight: 300;
   color: #373738;
   font-family: "Montserrat", sans-serif;
@@ -96,6 +96,13 @@ button {
   /* justify-self: end; */
   /* align-content: right; */
   /* align-self: center; */
+  transition: all .5s ease-out;
+}
+button:hover {
+  /* font-weight: 400; */
+  /* font-size: 1.25rem;
+  padding: .375rem; */
+  transform: scale(1.25);
 }
 .column {
   display: flex;
@@ -298,7 +305,7 @@ p {
 }
 form {
   width: 500px;
-  margin: 35px auto;
+  margin: 0 0;
   padding: 45px;
   border: 1px solid #f2f2f2;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
@@ -315,7 +322,7 @@ form {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: baseline;
+  justify-content:center;
   height: 700px;
 }
 
@@ -342,35 +349,32 @@ button small {
 #more-arrows {
   width: 75px;
   height: 65px;
-
-  &:hover {
-    polygon {
-      fill: rgba(0, 0, 0, 0.631);
-      transition: all 0.2s ease-out;
-
-      &.arrow-bottom {
-        transform: translateY(-18px);
-      }
-
-      &.arrow-top {
-        transform: translateY(18px);
-      }
-    }
-  }
 }
+#more-arrows:hover polygon {
+  fill: rgba(0, 0, 0, 0.631);
+  transition: all 0.2s ease-out;
+}
+#more-arrows:hover polygon.arrow-bottom {
+    transform: translateY(-18px);
+  }
+
+  #more-arrows:hover polygon.arrow-top {
+    transform: translateY(18px);
+  }
+
 
 polygon {
   fill: rgba(0, 0, 0, 0.152);
   transition: all 0.2s ease-out;
-
-  &.arrow-middle {
+}
+polygon.arrow-middle {
     opacity: 0.75;
   }
 
-  &.arrow-top {
+  polygon.arrow-top {
     opacity: 0.5;
   }
-}
+
 .form-control {
   font-family: "Montserrat", sans-serif;
 }
@@ -386,13 +390,24 @@ polygon {
   text-align: right;
 }
 .card-body {
-  background: url(../images/PNG/quotes@4x.png);
-  background-size: cover;
-  background-position: 0, 5%;
-  background-repeat: none;
+  position: relative;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   flex-direction: column;
   justify-content: center;
-  /* opacity: .25; */
+
+}
+.card-body::before {
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/PNG/quotes@4x.png);
+  background-size: 10rem;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  opacity: .25;
 }
