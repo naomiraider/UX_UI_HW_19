@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
 }
-
+p {
+  margin-bottom: 1rem;
+}
 .inline-block {
   vertical-align: top;
   display: inline-block;
@@ -35,7 +37,7 @@ body {
   /* width: fit-content; */
   font-size: 20px;
   margin-bottom: 150px;
-  font-weight: 100;
+  
 }
 .heroImg {
   padding: 25px;
@@ -171,14 +173,23 @@ h1 {
 h3 {
   font-size: 32px;
   text-align: center;
-  font-weight: 300;
+  font-weight: 200;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 h4 {
   font-size: 36px;
   font-weight: 400;
+
+  font-family: 'Abril Fatface', cursive;
+  color: gray;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: gray;
 }
 #proto1 {
   grid-area: proto1;
+  text-align: left;
 }
 #proto2 {
   grid-area: proto2;
@@ -188,6 +199,7 @@ h4 {
 }
 #proto3 {
   grid-area: proto3;
+  text-align: left;
 }
 #proto1-img {
   grid-area: proto1-img;
@@ -204,7 +216,7 @@ h4 {
 .philosophy {
   /* background-color: goldenrod; */
   padding: 1rem;
-  width: 100%;
+  width: 50%;
 }
 nav a {
   transition: all 1s;
@@ -301,9 +313,8 @@ h2 {
       "proto3";
   }
 }
-p {
-  margin-bottom: 1rem;
-}
+
+
 form {
   width: 500px;
   margin: 0 0;
