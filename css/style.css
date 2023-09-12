@@ -37,10 +37,11 @@ body {
   /* width: fit-content; */
   font-size: 20px;
   margin-bottom: 150px;
+  font-kerning: auto;
   
 }
 .heroImg {
-  padding: 25px;
+  /* padding: 25px; */
   /* background-color:rgba(218, 165, 32, 0.688);
   background-size: cover;
   background-repeat: no-repeat; */
@@ -54,7 +55,7 @@ body {
   align-items: center;
   /* margin: 0 auto; */
   padding: 30px;
-  font-size: 15px;
+  font-size: 16px;
   display: flex;
   column-gap: 36px;
   /* text-align: center; */
@@ -153,7 +154,7 @@ button:hover {
 .width-33 {
   width: calc(33% - 2rem);
   align-items: center;
-  text-align: center;
+  text-align: justify;
   /* margin-left: 10%;
   margin-right: 10%; */
   margin-bottom: 5%;
@@ -184,8 +185,8 @@ h4 {
   font-family: 'Abril Fatface', cursive;
   color: gray;
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: gray;
+  -webkit-text-stroke-width: 1.25px;
+  -webkit-text-stroke-color: rgb(79, 79, 79);
 }
 #proto1 {
   grid-area: proto1;
@@ -217,6 +218,7 @@ h4 {
   /* background-color: goldenrod; */
   padding: 1rem;
   width: 50%;
+  
 }
 nav a {
   transition: all 1s;
@@ -298,9 +300,7 @@ footer ul li a:hover {
 h2 {
   font-family: "Parisienne", cursive;
   font-size: 50px;
-  display: flex;
-  text-align: center;
-  color: white;
+  color: gray;
 }
 @media only screen and (max-width: 1000px) {
   .workGrid {
@@ -388,12 +388,17 @@ polygon.arrow-middle {
   }
 
 .form-control {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 .mb-0 {
   font-size: 15px;
   text-justify: auto;
   opacity: 1;
+  text-align: left;
+}
+.blockquote-footer {
+  text-align: right;
+  color: #808080;
 }
 .blockquote p {
   opacity: 1;
