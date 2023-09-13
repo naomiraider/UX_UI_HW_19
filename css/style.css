@@ -107,6 +107,7 @@ button {
   /* align-content: right; */
   /* align-self: center; */
   transition: all .5s ease-out;
+  
 }
 button:hover {
   /* font-weight: 400; */
@@ -114,6 +115,9 @@ button:hover {
   padding: .375rem; */
   transform: scale(1.25);
   border: goldenrod 1px solid;
+}
+#casestudy-btn {
+  display: block;
 }
 .column {
   display: flex;

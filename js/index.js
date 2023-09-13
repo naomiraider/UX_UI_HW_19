@@ -12,3 +12,9 @@ $("#proto1-btn").click(function () {
     "_blank"
   );
 });
+$("#casestudy-btn").click(function () {
+  window.open(
+    "https://naomiraider.github.io/UX_UI_HW_20/",
+    "_blank"
+  );
+});
