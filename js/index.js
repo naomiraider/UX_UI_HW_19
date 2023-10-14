@@ -2,7 +2,7 @@ console.log("your index.js file is loaded correctly");
 
 $("#resume").click(function () {
   window.open(
-    "https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:bcf94fbc-748e-3738-88bc-cdf2c6b842ca",
+    "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:886f41af-3945-3587-a1df-2d556dea67c2",
     "_blank"
   );
 });
